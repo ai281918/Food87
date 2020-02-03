@@ -8,13 +8,11 @@ public class FileReader : MonoBehaviour
 {
     public SlotController slotController;
     public string fileName;
-    public Text text;
 
     // Start is called before the first frame update
     void Start()
     {
         print(Application.dataPath);
-        text.text = Application.dataPath;
         ReadFile(Application.dataPath+"/"+fileName);
     }
 
